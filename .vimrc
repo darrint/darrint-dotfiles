@@ -43,7 +43,7 @@ let g:pymode_trim_whitespaces=0
 let g:syntastic_check_on_open = 1
 " let g:syntastic_python_checkers = ['pep8', 'python']
 " let g:syntastic_python_checkers = ['pep8']
-let g:syntastic_python_checkers = ['pep8', 'flake8']
+let g:syntastic_python_checkers = ['flake8', 'pep8']
 let g:syntastic_python_python_exec = '/usr/bin/python2'
 
 " set cindent
@@ -59,6 +59,7 @@ imap <leader>from From darrint@progeny.com <C-r>=strftime("%a %b %d %T %Z %Y")<C
 imap jj <esc>
 imap jJ <esc>
 imap Ipdb import ipdb; ipdb.set_trace()<esc>
+imap Fpip from pprint import pprint
 
 set guioptions-=T
 set guioptions-=m

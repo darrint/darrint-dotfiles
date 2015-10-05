@@ -9,3 +9,4 @@ My Linux Configuration
 /home/darrint/.vim/bundle/colorschemes
 /home/darrint/.vim/bundle/lightline.vim
 /home/darrint/.vim/bundle/syntastic
+/home/darrint/.vim/bundle/bbye
