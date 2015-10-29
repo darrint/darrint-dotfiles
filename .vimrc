@@ -1,16 +1,18 @@
 execute pathogen#infect()
 syntax enable
 set background=light
+let g:lightline = { 'colorscheme': 'solarized', }
 if has('gui-running')
     colorscheme sol
 else
+    
     colorscheme sol\-term
 endif
 
 set list
 " set lcs=tab:>-,trail:~
-" set lcs=tab:»¤,trail:¤
-set lcs=tab:»·,trail:¤
+" set lcs=tab:Â»Â¤,trail:Â¤
+set lcs=tab:Â»Â·,trail:Â¤
 fixdel
 set ruler
 set modeline
@@ -59,7 +61,7 @@ imap <leader>from From darrint@progeny.com <C-r>=strftime("%a %b %d %T %Z %Y")<C
 imap jj <esc>
 imap jJ <esc>
 imap Ipdb import ipdb; ipdb.set_trace()<esc>
-imap Fpip from pprint import pprint
+nmap Fpip Ifrom pprint import pprint; pprint(<C-o>$)<esc>
 
 set guioptions-=T
 set guioptions-=m
