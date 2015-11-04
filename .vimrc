@@ -5,15 +5,15 @@ let g:lightline = { 'colorscheme': 'solarized', }
 if has('gui-running')
     colorscheme sol
 else
-    
-    colorscheme sol\-term
+    "colorscheme sol\-term
+    colorscheme sprinkles
 endif
 
 set list
 " set lcs=tab:>-,trail:~
 " set lcs=tab:»¤,trail:¤
 set lcs=tab:»·,trail:¤
-fixdel
+" fixdel
 set ruler
 set modeline
 set expandtab
@@ -27,7 +27,6 @@ set smarttab
 set autoindent
 set shiftround
 set backspace=indent,start
-set nocompatible
 set shellslash
 set laststatus=2
 
@@ -40,13 +39,6 @@ let g:netrw_scp_cmd='"c:\cygwin\bin\scp.exe"'
 " let g:netrw_sftp_cmd='"c:\putty\psftp.exe"'
 " let g:netrw_ssh_cmd='"c:\putty\plink.exe"'
 " let g:netrw_scp_cmd='"c:\putty\pscp.exe" -q -batch'
-
-let g:pymode_trim_whitespaces=0
-let g:syntastic_check_on_open = 1
-" let g:syntastic_python_checkers = ['pep8', 'python']
-" let g:syntastic_python_checkers = ['pep8']
-let g:syntastic_python_checkers = ['flake8', 'pep8']
-let g:syntastic_python_python_exec = '/usr/bin/python2'
 
 " set cindent
 " set cinoptions=(0
@@ -62,6 +54,14 @@ imap jj <esc>
 imap jJ <esc>
 imap Ipdb import ipdb; ipdb.set_trace()<esc>
 nmap Fpip Ifrom pprint import pprint; pprint(<C-o>$)<esc>
+nmap <C-Left> <C-W>h
+nmap <C-Right> <C-W>l
+nmap <C-Up> <C-W>k
+nmap <C-Down> <C-W>j
+tnoremap <C-Left> <C-\><C-n><C-W>h
+tnoremap <C-Right> <C-\><C-n><C-W>l
+tnoremap <C-Up> <C-\><C-n><C-W>k
+tnoremap <C-Down> <C-\><C-n><C-W>j
 
 set guioptions-=T
 set guioptions-=m
