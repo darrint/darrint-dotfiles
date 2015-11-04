@@ -1,13 +1,12 @@
 execute pathogen#infect()
 syntax enable
 set background=light
+let g:lucius_style = 'light'
+let g:lucius_contrast = 'high'
+let g:lucius_contrast_bg = 'high'
+let g:lucius_use_underline = 1
 let g:lightline = { 'colorscheme': 'solarized', }
-if has('gui-running')
-    colorscheme sol
-else
-    "colorscheme sol\-term
-    colorscheme sprinkles
-endif
+colorscheme lucius
 
 set list
 " set lcs=tab:>-,trail:~
