@@ -30,26 +30,10 @@ set backspace=indent,start
 set shellslash
 set laststatus=2
 
-" netrw
-let g:netrw_cygwin=1
-let g:netrw_menu=1
-let g:netrw_sftp_cmd='"c:\cygwin\bin\sftp.exe"'
-let g:netrw_ssh_cmd='"c:\cygwin\bin\ssh.exe"'
-let g:netrw_scp_cmd='"c:\cygwin\bin\scp.exe"'
-" let g:netrw_sftp_cmd='"c:\putty\psftp.exe"'
-" let g:netrw_ssh_cmd='"c:\putty\plink.exe"'
-" let g:netrw_scp_cmd='"c:\putty\pscp.exe" -q -batch'
-
-" set cindent
-" set cinoptions=(0
-
 map H :nohlsearch<CR>
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 filetype plugin on
-imap <leader>li <listitem>><para>>
-imap <leader>nli <C-o>j<C-o>j<C-o>o<leader>li
-imap <leader>from From darrint@progeny.com <C-r>=strftime("%a %b %d %T %Z %Y")<CR>
 imap jj <esc>
 imap jJ <esc>
 imap Ipdb import ipdb; ipdb.set_trace()<esc>
