@@ -157,7 +157,7 @@ bindsym $mod+t border normal
 bindsym $mod+y border 1pixel
 bindsym $mod+u border none
 
-bindsym $mod+l exec i3lock -d -t -i /home/darrint/Pictures/Wallpapers/Standing-out-crop.png
+bindsym $mod+l exec i3lock -d -t -i /home/darrint/Pictures/Wallpapers/theflower22.png
 
 bindsym Control+Mod1+Up workspace prev_on_output
 bindsym Control+Mod1+Down workspace next_on_output

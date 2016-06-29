@@ -47,6 +47,8 @@ filetype plugin on
 imap jj <esc>
 imap jJ <esc>
 imap Ipdb import ipdb; ipdb.set_trace()<esc>
+imap tfun () => {<NL>});<Esc>O
+imap ptfun promiseTest(async () => {<NL>}));<Esc>O
 nmap Fpip Ifrom pprint import pprint; pprint(<C-o>$)<esc>
 nmap <C-Left> <C-W>h
 nmap <C-Right> <C-W>l
@@ -58,6 +60,10 @@ tnoremap <C-Right> <C-\><C-n><C-W>l
 tnoremap <C-Up> <C-\><C-n><C-W>k
 tnoremap <C-Down> <C-\><C-n><C-W>j
 inoremap <CR> <Esc>
+
+:digraph bb 9744
+:digraph hc 10004
+:digraph hx 10008
 
 set guioptions-=T
 set guioptions-=m
@@ -72,7 +78,7 @@ function! g:ToggleColorColumn(col)
   endif
 endfunction
 
-map <F9> :call g:ToggleColorColumn(75)<CR>
+map <F9> :call g:ToggleColorColumn(80)<CR>
 
 autocmd! BufWritePost * Neomake
 autocmd BufEnter * :syntax sync fromstart
